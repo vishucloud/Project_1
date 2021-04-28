@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;IndexController.java&apos; to &apos;springboot-hibernate-webapp/src/main/java/com.purplewisteria.springboothibernatewebapp.controllers&apos;&#x0D;&#x0A;- Original project: &apos;PetClinic_PW&apos;&#x0D;&#x0A;- Destination element: &apos;springboot-hibernate-webapp/src/main/java/com.purplewisteria.springboothibernatewebapp.controllers&apos;&#x0D;&#x0A;- Original element: &apos;com.purplewisteria.PetClinic.controllers.IndexController.java&apos;" description="Copy compilation unit" destination="=springboot-hibernate-webapp/src\/main\/java&lt;com.purplewisteria.springboothibernatewebapp.controllers" element1="/src\/main\/java&lt;com.purplewisteria.PetClinic.controllers{IndexController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1565334712404" units="1" version="1.0"/>
+</session>

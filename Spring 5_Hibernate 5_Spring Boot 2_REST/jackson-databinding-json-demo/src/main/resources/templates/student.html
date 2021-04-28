@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Boot </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+
+<div class ="container">
+<h2 class="mb-2"> Spring REST - JSON Jackson Demo - Processing JSON</h2>
+
+<br>
+      <H3>Student Data From JSON</H3>   <BR>
+<table class="table table-sm table-hover table-striped">
+    <tr class="table-warning">
+    </tr>
+    <thead>
+                     <tr >
+                        <td >
+                        STUDENT ID
+                        </td>
+                         <td >
+                        STUDENT FIRST NAME
+                        </td>
+                         <td >
+                        STUDENT LAST NAME
+                        </td>
+                         <td >
+                        STUDENT STATUS
+                        </td>
+                         <td >
+                        STREET
+                        </td>
+                         <td >
+                        CITY
+                        </td>
+                         <td >
+                        STATE
+                        </td>
+                         <td >
+                        ZIP
+                        </td>
+                         <td >
+                        COUNTRY
+                        </td>
+                   </tr> </thead>
+                 
+    <tr >
+        <td th:text="${student.id}">Student</td>
+        <td th:text="${student.firstName}">Student</td>
+        <td th:text="${student.lastName}">Student</td>
+        <td th:text="${student.active}">Student</td>
+        <td th:text="${student.getAddress().street}">Student</td>
+        <td th:text="${student.getAddress().city}">Student</td>
+        <td th:text="${student.getAddress().state}">Student</td>
+        <td th:text="${student.getAddress().zip}">Student</td>
+        <td th:text="${student.getAddress().country}">Student</td>
+       
+    </tr>
+</table>
+</div>
+
+
+<div>
+
+          <table class="table table-hover">
+                <thead>
+                     <tr >
+                        <td >
+                      <strong>	  LANGUAGES </strong>
+                        </td>
+                   </tr>
+                 
+                </thead>
+                <tbody>
+                    <tr th:each="language : ${student.getLanguages()}">
+       					 <td th:text="${language}">123</td>
+                  </tr>
+                </tbody>
+              </table>
+
+</div>
+</body>
+</html>

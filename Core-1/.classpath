@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="ClassesConstructorsObjects/src/main/java"/>
+	<classpathentry kind="src" path="ClassesConstructorsObjects/src/test/java"/>
+	<classpathentry kind="src" path="CompositionEncapsulationPolymorphism/src/main/java"/>
+	<classpathentry kind="src" path="CompositionEncapsulationPolymorphism/src/test/java"/>
+	<classpathentry kind="src" path="Inheritance/src/main/java"/>
+	<classpathentry kind="src" path="InterfcesAbstractClasses/src/main/java"/>
+	<classpathentry kind="src" path="InterfcesAbstractClasses/src/test/java"/>
+	<classpathentry kind="src" path="RecipeApplication/src/main/java"/>
+	<classpathentry kind="src" path="RecipeApplication/src/test/java"/>
+	<classpathentry kind="output" path="ClassesConstructorsObjects/target/classes"/>
+</classpath>

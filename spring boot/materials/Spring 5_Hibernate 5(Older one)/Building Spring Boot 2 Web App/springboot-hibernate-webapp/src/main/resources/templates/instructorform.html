@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" th:href="@{/css/style.css}"/>
+  <title>Bootstrap Theme</title>
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" id="home">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">PURPLE WISTERIA</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a th:href="@{'/'}" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#explore-head-section" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#create-head-section" class="nav-link">Instructors</a>
+          </li>
+          <li class="nav-item">
+            <a href="#share-head-section" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- Navigation Ends Here-->
+
+  <!-- HEADER SECTION -->
+  <header id="recipe-form-page">
+    <div class="dark-overlay">
+      <div class="home-inner container">
+        <div class="row">
+          <div class="col-lg-9">
+           
+                       <form  th:object="${instructor}" th:action="@{/instructor_controller/saveInstructor}"  method="post">
+                
+                
+                <div class="pannel-group">
+                    <div class="panel panel-primary">
+                       
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <label th:text="#{instructor.firstName}"> </label>                                    
+                                    <input type="text" class="form-control" th:field="*{firstName}"/>
+                              </div>
+                            </div>
+                        
+                               
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 form-group">
+                                    <label th:text="#{instructor.lastName}"></label>
+                                    <input type="text" class="form-control" th:field="*{lastName}"/>
+                                </div>
+                                <div class="col-md-3 form-group">
+                                    <label th:text="#{instructor.email}"></label>
+                                    <input type="text" class="form-control" th:field="*{email}"/>
+                                </div>
+                                  <div class="col-md-3 form-group">
+                                    <label th:text="#{instructorDetail.youtubeChannel}"></label>
+                                    <input type="text" class="form-control" th:field="*{instructorDetail.youtubeChannel}"/>
+                                </div>
+                                 <div class="col-md-3 form-group">
+                                    <label th:text="#{instructorDetail.hobby}"></label>
+                                    <input type="text" class="form-control" th:field="*{instructorDetail.hobby}"/>
+                                </div>
+                           
+                            </div>
+                        
+                        </div>
+                    </div>
+    
+                    <button type="submit" class="btn btn-success">Submit</button>
+                     </form>
+                </div>
+                 
+           
+            
+           <div>
+           <BR> <BR>
+            <table class="table table-hover">
+                <thead>
+                 <tr >
+                        <td >
+                        INSTRUCTOR ID
+                        </td>
+                         <td >
+                       FIRST NAME
+                        </td>
+                          <td >
+                       LAST NAME
+                        </td>
+                          <td >
+                       EMAIL
+                        </td>
+                          <td >
+                       INSTRUCTOR DETAIL: YouTube Channel
+                        </td>
+                           <td >
+                       INSTRUCTOR DETAIL: Hobby
+                        </td>
+                   </tr>
+                </thead>
+                <tbody>
+                    <tr >
+                    
+                    <h2>  <td th:text="${instructor.getId()}">INSTRUCTOR ID</td></h2>
+                     <h2> <td th:text="${instructor.firstName}">INSTRUCTOR NAME</td></h2>
+                     <h2> <td th:text="${instructor.lastName}">INSTRUCTOR NAME</td></h2>
+                     <h2> <td th:text="${instructor.email}">INSTRUCTOR EMAIL</td></h2>
+                     <h2> <td th:text="${instructor.instructorDetail.youtubeChannel}">YouTube Channel</td></h2>
+                       <h2> <td th:text="${instructor.instructorDetail.hobby}">Hobby</td></h2>
+                   </tr>
+                
+                </tbody>
+              </table>
+              
+           </div>
+           
+           
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <!-- CONTACT MODAL -->
+  <div class="modal fade text-dark" id="contactModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Contact Us</h5>
+          <button class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success btn-block">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // Init Scrollspy
+    $('body').scrollspy({ target: '#main-nav' });
+
+    // Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
+
+
+

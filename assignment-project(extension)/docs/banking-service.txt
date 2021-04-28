@@ -1,0 +1,28 @@
+- Introduction to banking-ui-service and banking-service Microservices
+- Setting up banking-service Microservice - Check the application.properties
+- Setting up Dynamic Port in the the Response
+- Configure JPA and Initialized Data
+- Create a JPA Repository
+       Try & Run two instances of the "banking-service Microservices" in different ports at same time
+
+- Setting up banking-ui-service Microservice
+- Creating a service for banking - "BankingControllers "
+- Invoking banking-service  Microservice from banking-ui-service…
+- Using Feign REST Client for Service Invocation - Add 'Fein' dependency & Enable 'Fein"
+- Setting up client side load balancing with Ribbon - add dependency & Enable 'ribbon'
+  &  Running client side load balancing with Ribbon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

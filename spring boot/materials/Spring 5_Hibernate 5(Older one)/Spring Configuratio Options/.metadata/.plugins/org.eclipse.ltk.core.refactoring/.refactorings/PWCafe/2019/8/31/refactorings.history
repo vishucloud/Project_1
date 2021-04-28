@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;PWCafe/src/main/resources/templates&apos; to &apos;mailtemplates&apos;" description="Rename resource &apos;templates&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates" name="mailtemplates" stamp="1564712950775" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;PWCafe/src/main/resources/mailtemplates&apos; to &apos;templates&apos;" description="Rename resource &apos;mailtemplates&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/mailtemplates" name="templates" stamp="1564713106987" updateReferences="true"/>
+</session>

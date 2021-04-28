@@ -1,0 +1,57 @@
+<!DOCTYPE >
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Bootstrap/</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+<body>
+
+ <div class="container">  <!-- Bootstrap Fixed Layout:  -->  
+ <span th:text="${ message  }">  Info Not Available!  </span>
+ <hr>
+        <div class="row">
+           <div class="col-md-2"> 
+               <a th:href="@{/mains}" class="btn btn-outline-danger btn-sm"> Mains</a>
+           </div>
+           <div class="col-md-2"> 
+                 <a th:href="@{/appetizers}" class="btn btn-outline-danger btn-sm"> Appetizers</a>
+                                  
+           </div>
+           <div class="col-md-2"> 
+                <a th:href="@{/soups}" class="btn btn-outline-danger btn-sm"> Soups </a>
+                                   
+           </div>
+       </div>      
+     </div>
+
+   <!-- home_footer -->
+<div id="home_footer" class="home_footer">   
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+           <footer>
+                    <p>2018 © Copyright Purple Wisteria</p>
+                </footer>
+          </div>
+
+           <div class="col-sm-12 col-md-12">
+                <address>  <small>Developed By:<br />  
+         PURPLE WISTERIA<br/>
+www.purplewisteria.com<br/>
+plewista@gmail.com<br/>
++1 (404) 382-0505<br/>
+https://www.facebook.com/plewista</small>
+</address>
+          </div>
+         
+         </div>
+     </div>  
+   </div>
+</body>
+</html>

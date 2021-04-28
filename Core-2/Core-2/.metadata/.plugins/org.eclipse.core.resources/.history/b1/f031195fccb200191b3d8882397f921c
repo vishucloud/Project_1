@@ -1,0 +1,8 @@
+package com.purplewisteria.Inheritance.burger;
+
+public class Snippet {
+	public static void main(String[] args) {
+		package test;
+	}
+}
+

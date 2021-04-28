@@ -1,0 +1,17 @@
+cars\models\City.class
+cars\models\RaceCars.class
+com\purplewisteria\walkable\solution\Walkable.class
+com\purplewisteria\walkable\WalkablesTest.class
+com\purplewisteria\walkable\solution\Cat.class
+cars\models\RaceTrack.class
+com\purplewisteria\walkable\solution\Walkables.class
+cars\models\RaceCar.class
+com\purplewisteria\walkable\Duck.class
+com\purplewisteria\walkable\solution\Duck.class
+cars\models\Ferrari.class
+com\purplewisteria\walkable\Person.class
+cars\models\Mustang.class
+cars\models\Bentley.class
+com\purplewisteria\walkable\solution\Person.class
+com\purplewisteria\walkable\solution\WalkablesTest.class
+com\purplewisteria\walkable\Walkables.class

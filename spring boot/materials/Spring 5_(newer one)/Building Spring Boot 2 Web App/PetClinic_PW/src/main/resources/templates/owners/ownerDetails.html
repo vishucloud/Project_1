@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8"/>
+    <title>List of Pet Owners</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+       <img src="/img/spring-pivotal-logo.png" alt="" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">            
+            <a th:href="@{'/index'}" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item active">
+            <a th:href="@{'/owners'+ '/index'}" class="nav-link">FIND OWNERS</a>
+          </li>
+          <li class="nav-item">
+            <a th:href="@{'/vets'+ '/index'}" class="nav-link">VETERINARIANS</a>
+          </li>
+          <li class="nav-item">
+            <a href="error.html" class="nav-link">ERROR</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+  <h2 class="m-3">Owner Information</h2>
+    <table class="table table-striped" th:object="${owner}">
+      <tr>
+        <th>Name</th>
+        <td><b th:text="*{firstName + ' ' + lastName}"></b></td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td th:text="*{address}" /></td>
+      </tr>
+      <tr>
+        <th>City</th>
+        <td th:text="*{city}" /></td>
+      </tr>
+      <tr>
+        <th>Telephone</th>
+        <td th:text="*{telephone}" /></td>
+      </tr>
+    </table>
+  
+    <a th:href="@{ {id}/edit(id=${owner.id}) }" class="btn btn-outline-success">Edit
+      Owner</a>
+    <a th:href="@{{id}/pets/new(id=${owner.id})}" class="btn btn-outline-success">Add
+      New Pet</a>
+  
+    <br />
+    <br />
+    <br />
+    <h2 class="mb-3">Pets and Visits</h2>
+  
+    <table class="table table-striped">
+  
+      <tr th:each="pet : ${owner.pets}">
+        <td valign="top">
+          <dl class="dl-horizontal">
+            <dt>Name</dt>
+            <dd th:text="${pet.name}" /></dd>
+            <dt>Birth Date</dt>
+            <dd
+              th:text="${#temporals.format(pet.birthDate, 'yyyy-MM-dd')}" /></dd>
+            <dt>Type</dt>
+            <dd th:text="${pet.petType.name}" /></dd>
+          </dl>
+        </td>
+        <td valign="top">
+          <table class="table-condensed">
+            <thead>
+              <tr>
+                <th>Visit Date</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tr th:each="visit : ${pet.visits}">
+              <td th:text="${#temporals.format(visit.date, 'yyyy-MM-dd')}"></td>
+              <td th:text="${visit.description}"></td>
+            </tr>
+            <tr>
+              <td><a
+                th:href="@{{ownerId}/pets/{petId}/edit(ownerId=${owner.id},petId=${pet.id})}">Edit
+                  Pet</a></td>
+              <td><a
+                th:href="@{{ownerId}/pets/{petId}/visits/new(ownerId=${owner.id},petId=${pet.id})}">Add
+                  Visit</a></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+  
+    </table>
+    
+    </div> 
+  
+  </body>
+
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SpringConfigOptions&apos; to &apos;SpringComponentScan&apos;" description="Rename resource &apos;SpringConfigOptions&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SpringConfigOptions" name="SpringComponentScan" stamp="1549976442245" updateReferences="true"/>
+</session>

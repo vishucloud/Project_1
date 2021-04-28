@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="G:\Java Programming\Software Tools Setup &amp;  First Steps\expressions_statements_blocks_methods"/>
+			<item value="G:\Java Programming\Software Tools Setup &amp;  First Steps\ControlFlow"/>
+			<item value="G:\Java Programming\Software Tools Setup &amp;  First Steps\variables_datatypes_operators"/>
+			<item value="G:\Java Programming\Software Tools Setup &amp;  First Steps\hello_world_app"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

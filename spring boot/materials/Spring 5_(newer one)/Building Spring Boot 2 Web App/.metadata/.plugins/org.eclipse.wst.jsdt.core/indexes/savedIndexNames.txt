@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+G:\Spring Framework 5 Spring Boot 2\Building Spring Boot 2 Web App\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

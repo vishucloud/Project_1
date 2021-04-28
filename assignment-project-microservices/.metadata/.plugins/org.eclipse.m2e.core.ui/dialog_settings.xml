@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="G:\Spring Framework 5 Spring Boot 2\Microservices Spring Cloud\assignment-project\netflix-zuul-api-gateway-server"/>
+			<item value="G:\Spring Framework 5 Spring Boot 2\Microservices Spring Cloud\assignment-project\banking-service"/>
+			<item value="G:\Spring Framework 5 Spring Boot 2\Microservices Spring Cloud\assignment-project\netflix-eureka-naming-server"/>
+			<item value="G:\Spring Framework 5 Spring Boot 2\Microservices Spring Cloud\assignment-project\banking-service-caller"/>
+			<item value="G:\Spring Framework 5 Spring Boot 2\Microservices Spring Cloud\assignment-project\investing-service"/>
+			<item value="G:\Spring Framework 5 Spring Boot 2\Microservices Spring Cloud\assignment-project\insurance-service"/>
+			<item value="G:\Spring Framework 5 Spring Boot 2\Microservices Spring Cloud\assignment-project\spring-cloud-config-server"/>
+			<item value="G:\Spring Framework 5 Spring Boot 2\Microservices Spring Cloud\assignment-project\borrowing-service"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

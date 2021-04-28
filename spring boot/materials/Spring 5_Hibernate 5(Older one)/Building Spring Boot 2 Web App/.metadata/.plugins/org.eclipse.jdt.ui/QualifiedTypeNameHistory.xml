@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.purplewisteria.spring5webapp.repositories.PublisherRepository"/>
+<fullyQualifiedTypeName name="com.purplewisteria.spring5webapp.modal.Publisher"/>
+<fullyQualifiedTypeName name="com.purplewisteria.spring5webapp.repositories.BookRepository"/>
+<fullyQualifiedTypeName name="com.purplewisteria.spring5webapp.repositories.AuthorRepository"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="com.purplewisteria.spring5webapp.repositories.StudentRepository"/>
+<fullyQualifiedTypeName name="com.purplewisteria.spring5webapp.repositories.SubjectRepository"/>
+<fullyQualifiedTypeName name="com.purplewisteria.spring5webapp.modal.Student"/>
+<fullyQualifiedTypeName name="com.purplewisteria.spring5webapp.modal.Subject"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="javax.persistence.JoinTable"/>
+<fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
+<fullyQualifiedTypeName name="com.purplewisteria.spring5webapp.modal.Book"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="com.purplewisteria.spring5webapp.modal.Author"/>
+<fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="com.purplewisteria.springboothibernatewebapp.repositories.StudentRepository"/>
+<fullyQualifiedTypeName name="com.purplewisteria.springboothibernatewebapp.modal.Student"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="java.util.Optional"/>
+<fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+<fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
+<fullyQualifiedTypeName name="com.purplewisteria.springboothibernatewebapp.modal.InstructorDetail"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.purplewisteria.springboothibernatewebapp.modal.Instructor"/>
+</qualifiedTypeNameHistroy>

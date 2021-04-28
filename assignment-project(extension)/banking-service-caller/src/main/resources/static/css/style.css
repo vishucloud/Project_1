@@ -1,0 +1,22 @@
+
+body {
+  overflow-x: hidden;
+  background: #FFFFFF;
+
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item .active {
+  border-left: #444 2px solid;
+}
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}

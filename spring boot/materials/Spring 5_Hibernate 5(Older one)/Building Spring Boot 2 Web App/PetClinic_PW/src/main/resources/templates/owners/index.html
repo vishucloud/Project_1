@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8"/>
+    <title>List of Pet Owners</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+       <img src="/img/spring-pivotal-logo.png" alt="" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">            
+            <a th:href="@{'/index'}" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item active">
+            <a th:href="@{'/owners'+ '/index'}" class="nav-link">FIND OWNERS</a>
+          </li>
+          <li class="nav-item">
+            <a th:href="@{'/vets'+ '/index'}" class="nav-link">VETERINARIANS</a>
+          </li>
+          <li class="nav-item">
+            <a href="error.html" class="nav-link">ERROR</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<div class="container">
+
+        <div class="card" style="width: 60rem;">
+            <div class="card-body">
+                <h2 class="card-title" th:text="'Owners'">Owners</h2>
+                
+        <table class="table table-striped">
+            <thead>
+                <tr>                    
+                    <th style="width: 150px;">Id</th>
+                    <th style="width: 200px;">First Name</th>
+                    <th style="width: 120px">Last Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="owner: ${owners}">
+                
+                    <td th:text="${owner.id}">Id</td>
+                    <td th:text="${owner.firstName}">FirstName</td>
+                    <td th:text="${owner.lastName}">LastName</td>
+                </tr>
+            </tbody>
+        </table>
+             
+                <a class="btn btn-outline-primary" href="#">Read More</a>
+            </div>
+        </div>
+</div>
+
+ <!-- INFO SECTION -->
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/img/platform-bg.png" alt="" class="img-fluid">
+        </div>
+           <div class="col-md-6 align-self-center">
+         <img src="/img/spring-pivotal-logo.png" alt="" class="img-fluid">
+          <p>Building Spring Boot 2 Pet Clinic Application using JAVA 11 | Spring Framework 5 | Spring MVC | Spring REST  Spring Boot 2 | Hibernate 5 | 
+         Spring Data & JPA .</p>
+          <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+

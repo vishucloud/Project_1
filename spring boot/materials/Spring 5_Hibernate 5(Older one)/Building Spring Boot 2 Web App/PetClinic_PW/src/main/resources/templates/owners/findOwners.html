@@ -1,0 +1,81 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8"/>
+    <title>List of Pet Owners</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+       <img src="/img/spring-pivotal-logo.png" alt="" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">            
+            <a th:href="@{'/index'}" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item active">
+            <a th:href="@{'/owners'+ '/index'}" class="nav-link">FIND OWNERS</a>
+          </li>
+          <li class="nav-item">
+            <a th:href="@{'/vets'+ '/index'}" class="nav-link">VETERINARIANS</a>
+          </li>
+          <li class="nav-item">
+            <a href="error.html" class="nav-link">ERROR</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section id="info" class="py-3">
+    <div class="container">
+    
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h2>Find Owners</h2>
+         
+     <form th:object="${owner}" th:action="@{/owners}" method="get"
+    class="form-horizontal" id="search-owner-form">
+    <div class="form-group">
+      <div class="control-group col-md-6" id="lastNameGroup">
+        <label class="control-label">Last name </label>
+        <div class="">
+          <input class="form-control" th:field="*{lastName}" size="30"
+            maxlength="80" /> 
+            <div th:if="${#fields.hasAnyErrors()}">
+              <p th:each="err : ${#fields.allErrors()}" th:text="${err}">Error</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="">
+        <button type="submit" class="btn btn-outline-success">Find
+          Owner</button>
+      </div>
+    </div>
+  </form>
+
+            <a class="btn btn btn-outline-success" th:href="@{/owners/new}">Add Owner</a>
+     </div>
+     
+     <div class="col-md-6">
+             <img src="/img/platform-bg.png" alt="" class="img-fluid">
+          <p>Building Spring Boot 2 Pet Clinic Application using JAVA 11 | Spring Framework 5 | Spring MVC | Spring REST  Spring Boot 2 | Hibernate 5 | 
+         Spring Data & JPA .</p>
+          <a href="about.html" class="btn btn-outline-danger btn-lg">Learn More</a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

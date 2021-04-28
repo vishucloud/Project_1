@@ -1,0 +1,24 @@
+Introduction & Setting up banking-service, borrowing-service, investing-service & insurance-service
+Update application.properties of  all the services.
+Setting up Spring Cloud Config Server & Enable it! & Update application.properties 
+Installing Git (Spring Cloud Config Server & Git are ready)
+Creating Empty Local Git Repository ( use .git command) - check images for commands
+     - Initialize git repo
+     - Linking the git local repo to spring clound config server
+     - Creating text files for storing config details of "banking-service, borrowing-service, investing-service & insurance-service"
+     - Adding the files into the local 'git' repository - commiting the changes to git repository
+     - Connect Spring Cloud Config Server to Local Git Repository (check properties file of Spring Cloud Config Server)
+     - Connect banking-service, borrowing-service, investing-service & insurance-service to Spring Cloud Config Server
+Launch Spring Cloud Config Server & Accessing configuration details of banking-service, borrowing-service, investing-service & insurance-service
+
+
+
+Configuration for Multiple Environments in Git Repository & commit the additional files
+
+
+
+
+
+
+
+

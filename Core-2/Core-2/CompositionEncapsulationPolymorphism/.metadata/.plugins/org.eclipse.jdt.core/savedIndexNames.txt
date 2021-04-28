@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+E:\JAVA_Course\materials\Core-2\CompositionEncapsulationPolymorphism\.metadata\.plugins\org.eclipse.jdt.core
+3940600246.index
+902745261.index
+117774581.index

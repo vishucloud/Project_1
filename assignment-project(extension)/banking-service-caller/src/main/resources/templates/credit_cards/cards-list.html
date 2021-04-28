@@ -1,0 +1,97 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8"/>
+    <title>BANKING SERVICE - Credit Cards</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+       <img src="/img/spring-pivotal-logo.png" alt="" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">            
+            <a th:href="@{'/home'}" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            
+          </li>
+          <li class="nav-item">
+            <a th:href="@{'/about'}" class="nav-link">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+             <a th:href="@{'/contact'}" class="nav-link">CONTACT</a>
+          </li>
+             <li class="nav-item dropdown active">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">BANKING SERVICE</a>
+                    <div class="dropdown-menu">
+                        <a th:href="@{'/banking-Service-feign/cards'}" class="dropdown-item">Credit Cards</a>
+                    </div>
+                </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+
+ <!-- INFO SECTION -->
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h3>Our Credit Cards</h3>
+          <p>We offer a variety of credit cards to meet your needs.. whether you're looking for cash back promotions, low introductory APRs or travel benefits.. </p>
+        </div>
+        <div class="col-md-6">
+          <img src="/img/card.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<div class="">
+
+    <table id="cards" class="table table-striped">
+        <thead>
+        <tr>
+            <th style="width: 100px;">CARD ID</th>
+            <th style="width: 200px;">CARD NAME</th>
+            <th style="width: 200px;">ANNUAL FEE</th>
+            <th style="width: 250px">FOREIGN TRANSACTION FEE</th>
+            <th style="width: 200px">WELCOME OFFER</th>
+            <th style="width: 120px">PORT</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr th:each="card : ${cardsList}">
+             <td th:text="${card.getId()}"/>
+              <td th:text="${card.getCardName()}"/>
+              <td th:text="${card.getAnnualFee()}"/>              
+              <td th:text="${card.getForeignTransactionFee()}"/>
+              <td th:text="${card.getWelcomeOffer()}"/>
+              <td th:text="${card.getPort()}"/>
+              <td>
+                <a href="Apply" class="btn btn-outline-danger btn-lg">Learn More</a>
+                </td>
+                 <td>
+                <a href="Apply" class="btn btn-outline-danger btn-lg">Apply Now</a>
+                </td>
+                
+          </tr>
+        </tbody>
+    </table>
+    
+</div>
+
+ 
+  
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="G:\Spring 5_Hibernate 5_Spring Boot 2_Microservices\Spring Configuratio Options\PWCafe"/>
+			<item value="G:\Spring 5_Hibernate 5_Spring Boot 2_Microservices\Spring Configuratio Options\injecting-values"/>
+			<item value="G:\Spring Framework 5 Spring Boot 2\Spring Configuratio Options\SpringFactoryBeans"/>
+			<item value="G:\Spring Framework 5 Spring Boot 2\Spring Configuratio Options\SpringConfigOptions"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

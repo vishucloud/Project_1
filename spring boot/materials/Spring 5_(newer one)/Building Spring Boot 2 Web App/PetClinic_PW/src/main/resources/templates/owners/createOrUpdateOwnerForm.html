@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8"/>
+    <title>List of Pet Owners</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+       <img src="/img/spring-pivotal-logo.png" alt="" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">            
+            <a th:href="@{'/index'}" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item active">
+            <a th:href="@{'/owners'+ '/find'}" class="nav-link">OWNERS SEARCH</a>
+          </li>
+          <li class="nav-item">
+            <a th:href="@{'/vets'+ '/index'}" class="nav-link">VETERINARIANS</a>
+          </li>
+          <li class="nav-item">
+            <a href="error.html" class="nav-link">ERROR</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/img/platform-bg.png" alt="" class="img-fluid">
+        </div>
+           <div class="col-md-6 align-self-center">
+             
+               <h2>Owner</h2>
+  <form th:object="${owner}" class="form-horizontal" id="add-owner-form" method="post">      
+      
+            <div class="form-group">
+                <label for="First Name">First Name</label>
+                <input class="form-control" type="text" id="firstName" placeholder="Firt Name" th:field="*{firstName}">
+            </div>
+            <div class="form-group">
+                <label for="Last Name">Last Name</label>
+                <input class="form-control form-control" type="text" id="lname" placeholder="Last Name" th:field="*{lastName}">
+            </div>
+            <div class="form-group">
+                <label for="company">Address</label>
+                <input class="form-control form-control-sm" type="text" id="address" placeholder="Address" th:field="*{address}">
+            </div>
+            <div class="form-group">
+                <label for="password">City</label>
+                <input class="form-control" type="text" id="city" placeholder="City" th:field="*{city}">
+            </div>
+            
+      		<div class="form-group">
+                <label for="password">Telephone</label>
+                <input class="form-control" type="text" id="telephone" placeholder="Telephone" th:field="*{telephone}">
+            </div>
+            
+       <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button
+          th:with="text=${owner['new']} ? 'Add Owner' : 'Update Owner'"
+          class="btn btn-outline-success" type="submit" th:text="${text}">Add
+          Owner</button>
+      </div>
+    </div>
+    
+  </form>
+               
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

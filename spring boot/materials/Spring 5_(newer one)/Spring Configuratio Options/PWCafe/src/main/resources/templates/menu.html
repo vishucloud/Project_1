@@ -1,0 +1,109 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Bootstrap/</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body>
+    <h2>PWCafe</h2>
+    
+     <div class="container  menu_tables">
+        <div class="row">
+              <!-- 1st Table  Starts Here..-->
+            <div class="col-sm-12 col-md-12"> 
+                <table class="table table-hover"> <!-- table class -->
+                    <thead> <!-- table head-->
+                    <tr>  <h1 class="display-4">MAINS</h1></tr>
+                      </thead>
+                    <tbody>
+                       <tr th:each="mains : ${setOfMains}">
+                             <td><span th:text="${ mains.getMainsName()  }">  Mains Not Available!  </span>
+                             </td>
+                             <td></td>                           
+                             <td>$<span th:text="${ mains.getPrice() }">  Mains Price Not Available!  </span>
+                             </td>
+                              <td>  </td>
+                              <td><a  th:href="@{/PWCafeController( choice='mains', action='order', mainsName=${mains.getMainsName() },  price=${mains.getPrice()}  ) }">Order</a></td>
+                        </tr>
+                    </tbody>
+          </table>
+            </div>
+        </div>
+        </div> <!-- Mains Table Ends Here..-->
+        
+    
+        <div class="container menu_tables">
+        <div class="row">
+              <!-- 1st Table  Starts Here..-->
+            <div class="col-sm-12 col-md-12"> 
+                <table class="table table-hover"> <!-- table class -->
+                    <thead> <!-- table head-->
+                    <tr>  <h1 class="display-4">APPETIZERS</h1></tr>
+                      </thead>
+                    <tbody>
+                       <tr th:each="appetizer : ${setOfAppetizers}">
+                             <td><span th:text="${ appetizer.getAppetizerName() }">  Appetizer Not Available!  </span>
+                             </td>
+                             <td></td>                           
+                             <td>$<span th:text="${ appetizer.getPrice() }">  Appetizer Price Not Available!  </span>
+                             </td>
+                              <td>  </td>
+                              <td><a  th:href="@{/PWCafeController( choice='appetizers', action='order', appetizerName=${appetizer.getAppetizerName()},  price=${appetizer.getPrice()}  ) }">Order</a></td>
+                        </tr>
+                    </tbody>
+          </table>
+            </div>
+        </div>
+        </div> <!-- Appetizers Table Ends Here..-->
+       
+              <div class="container menu_tables">
+        <div class="row">
+              <!-- 1st Table  Starts Here..-->
+            <div class="col-sm-12 col-md-12"> 
+                <table class="table table-hover"> <!-- table class -->
+                    <thead> <!-- table head-->
+                    <tr>  <h1 class="display-4">SOUPS</h1></tr>
+                      </thead>
+                    <tbody>
+                       <tr th:each="soup : ${setOfSoups}">
+                             <td><span th:text="${soup.getSoupName() }">  Soup Not Available!  </span>
+                             </td>
+                             <td></td>                           
+                             <td>$<span th:text="${soup.getPrice() }">  Soup Price Not Available!  </span>
+                             </td>
+                              <td>  </td>
+                              <td><a  th:href="@{/PWCafeController( choice='soups', action='order', soupName=${soup.getSoupName()},  price=${soup.getPrice()}  ) }">Order</a></td>
+                        </tr>
+                    </tbody>
+          </table>
+            </div>
+        </div>
+        </div> <!-- Soups Table Ends Here..-->
+    
+<!-- home_footer -->
+<div id="home_footer" class="home_footer">   
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+           <footer>
+                    <p>2017 Â© Copyright Purple Wisteria</p>
+                </footer>
+          </div>
+
+           <div class="col-sm-12 col-md-12">
+                <address>  <small>Developed By:<br />  
+         PURPLE WISTERIA<br/>
+www.purplewisteria.com<br/>
+plewista@gmail.com<br/>
++1 (404) 382-0505<br/>
+https://www.facebook.com/plewista</small>
+</address>
+          </div>
+  </body>
+</html>

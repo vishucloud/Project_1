@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <title>::Books::</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+       <img src="" alt="" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">            
+            <a  class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a th:href="@{'/books'}" class="nav-link">BOOKS</a>
+          </li>
+          <li class="nav-item">
+            <a th:href="@{'/authors'}" class="nav-link">AUTHORS</a>
+          </li>
+          <li class="nav-item">
+            <a th:href="@{'/publishers'}" class="nav-link">PUBLISHERS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- INFO SECTION -->
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h3>Spring Boot 2 Development</h3>
+          <p>Building Spring Boot 2 Application using JAVA 11 | Spring Framework 5 | Spring MVC | Spring REST  Spring Boot 2 | Hibernate 5 | 
+         Spring Data & JPA .</p>
+          <a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/index.html" class="btn btn-outline-danger btn-lg">Learn More</a>
+        </div>
+        <div class="col-md-6">
+          <img src="/img/pets.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+     <!-- INFO SECTION -->
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/images/architecture/data_access_layers.svg" alt="" class="img-fluid">
+        </div>
+           <div class="col-md-6 align-self-center">
+         <img src="/img/spring-pivotal-logo.png" alt="" class="img-fluid">
+          <p>Building Spring Boot 2 Application using JPA Hibernate Many To Many & One To One Mappings 
+         Spring Data & JPA .</p>
+         <strong>
+         <p>Many To Many - Bi-Directional Mapping
+         Navigate from Author To Book:</p>
+         <p> http://localhost:8080/author_books/3 </p>
+         OR
+         <p>Navigate from Book To Author:</p>
+         <p> http://localhost:8080/book_authors/6 </p>
+         </p>
+         </strong>
+          <a href="http://hibernate.org/orm/" class="btn btn-outline-danger btn-lg">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ 
+  
+</body>
+</html>

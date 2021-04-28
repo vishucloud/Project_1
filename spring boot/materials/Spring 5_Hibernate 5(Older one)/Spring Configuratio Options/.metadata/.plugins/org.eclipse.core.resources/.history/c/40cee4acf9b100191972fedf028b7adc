@@ -1,0 +1,16 @@
+package com.purplewisteria.services;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
+
+@Service ("cgs")
+//@Scope ("prototype")
+public class ConstructorGreetingService implements GreetingService {
+	
+    @Override
+    
+    public String sayGreeting() {
+    	
+        return "Hello - I was injected via the constructor!!!";
+    }
+}

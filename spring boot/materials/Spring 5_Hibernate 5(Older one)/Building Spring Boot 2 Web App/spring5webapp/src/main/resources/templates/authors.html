@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Framework 5 Web App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+       <img src="/img/spring-pivotal-logo.png" alt="" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">            
+            <a th:href="@{'/'}" class="nav-link">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a th:href="@{'/books'}" class="nav-link">BOOKS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link">AUTHORS</a>
+          </li>
+          <li class="nav-item">
+            <a th:href="@{'/publishers'}" class="nav-link">PUBLISHERS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<div class ="container">
+<h3>Authors List</h3>
+
+<table class="table table-sm table-striped table-hover">
+    <tr class="thead-dark">
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+    </tr>
+    <tr th:each="author : ${authors}">
+        <td th:text="${author.id}">123</td>
+        <td th:text="${author.firstName}">Joe</td>
+        <td th:text="${author.lastName}">Buck</td>
+        <td th:text="${author.lastName}">Buck</td>
+    </tr>
+</table>
+</div>
+
+  <hr>
+  <br>
+  <br>
+  
+<div class ="container">
+<h3>Books List For Author ID: 
+<span th:text="${authorId}"></span>
+</h3>
+<table class="table table-sm table-striped table-hover" >
+   <tr class="thead-dark">
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>ISBN</th>
+        <th>PUBLISHER</th>
+    </tr>
+ 
+    <tr th:each="book : ${books}">
+    
+         <td th:text="${book.id}"></td>
+        <td th:text="${book.title}"></td>
+        <td th:text="${book.isbn}"></td>
+        <td th:text="${book.publisher.name}"></td>
+    </tr>
+</table>
+</div>
+
+
+</body>
+</html>

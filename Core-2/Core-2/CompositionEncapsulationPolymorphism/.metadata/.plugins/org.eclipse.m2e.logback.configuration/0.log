@@ -1,0 +1,30 @@
+2019-08-15 08:26:51,972 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-08-20 06:53:36,461 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-08-20 06:56:50,580 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.purplewisteria:RecipeApp:1.0 @ E:\JAVA_Course\materials\Core-2\RecipeApplication\pom.xml.
+2019-08-20 06:56:54,173 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RecipeApp/src/main/java
+2019-08-20 06:56:54,175 [Worker-5: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /RecipeApp/src/test/java
+2019-08-20 06:56:54,553 [Worker-5: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 33 sec
+2019-08-20 06:56:56,378 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 06:56:56,379 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\main\resources
+2019-08-20 06:56:56,383 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 06:56:56,383 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\test\resources
+2019-08-20 06:59:46,062 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 06:59:46,062 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\main\resources
+2019-08-20 06:59:46,065 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 06:59:46,066 [Worker-3: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\test\resources
+2019-08-20 07:08:58,164 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 07:08:58,165 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\main\resources
+2019-08-20 07:08:58,167 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 07:08:58,167 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\test\resources
+2019-08-20 07:12:23,797 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 07:12:23,797 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\main\resources
+2019-08-20 07:12:23,802 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 07:12:23,802 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\test\resources
+2019-08-20 07:13:11,208 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 07:13:11,209 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\main\resources
+2019-08-20 07:13:11,212 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 07:13:11,212 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\test\resources
+2019-08-20 07:13:31,331 [Worker-21: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 07:13:31,331 [Worker-21: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\main\resources
+2019-08-20 07:13:31,335 [Worker-21: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-20 07:13:31,336 [Worker-21: Rebuilding] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\JAVA_Course\materials\Core-2\RecipeApplication\src\test\resources

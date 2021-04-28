@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8"/>
+    <title>List of Vets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <meta charset="UTF-8"/>
+    <title>Users</title>
+<body>
+<!--/*@thymesVar id="users" type="java.util.List"*/-->
+<!--/*@thymesVar id="user" type="guru.springframework.api.domain.User"*/-->
+<div class="container-fluid" style="margin-top: 20px">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">
+                     <h3 class="panel-title">Consuming Quote
+                      RESTful Web Service</h3> <br>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive" >
+                        <table class="table table-hover">
+                            <thead class="thead-inverse">
+                            <tr>
+                                <th>Quote Type</th>
+                                <th>Quote ID</th>
+                                <th>Quote</th>
+                            </tr>
+                            </thead>
+                            
+                            <tr >
+                                <td th:text="${quote.getType()}">Quote</td>
+                                <td th:text="${quote.getValue().getId()}">Quote</td>
+                                <td th:text="${quote.getValue().getQuote()}">Quote</td>
+                                
+                              
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
